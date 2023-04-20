@@ -5,7 +5,7 @@ CREATE DATABASE IF NOT EXISTS hw_3;
 USE hw_3;
 
 -- Создание таблицы с персоналом
-DROP TABLE IF EXISTS staff; -- Удаляю таблицу, если она существует
+DROP TABLE IF EXISTS staff;
 CREATE TABLE staff
 (
 	id INT PRIMARY KEY AUTO_INCREMENT, 
@@ -13,7 +13,7 @@ CREATE TABLE staff
     lastname VARCHAR(45),
     post VARCHAR(45),
     seniority INT, 
-    salary DECIMAL (8,2), -- д-н: от - 999 999 до 999 999
+    salary DECIMAL (8,2),
     age INT
 );
 
