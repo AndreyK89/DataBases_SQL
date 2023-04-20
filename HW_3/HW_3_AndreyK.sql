@@ -81,7 +81,7 @@ SELECT
 	COUNT(DISTINCT post) AS count_post
 FROM staff;
 
--- 6. Выведите специальности, у которых средний возраст сотрудников меньше 30 лет 
+-- 6. Выведите специальности, у которых средний возраст сотрудников меньше 30 лет включительно.
 SELECT post, AVG(age)
 FROM staff
 GROUP BY post
